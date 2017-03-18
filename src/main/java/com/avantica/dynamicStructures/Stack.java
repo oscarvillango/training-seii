@@ -2,8 +2,15 @@ package com.avantica.dynamicStructures;
 
 public class Stack {
 
+	private int size = 0;
+	
 	public Boolean isEmpty() {
-		return true;
+		return size == 0;
+	}
+
+	public void push(final String string) {
+		// TODO Auto-generated method stub
+		size++;
 	}
 	
 }

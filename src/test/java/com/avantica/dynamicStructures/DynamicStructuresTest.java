@@ -9,7 +9,7 @@ public class DynamicStructuresTest {
 	public void stackTest(){
 		Stack stack = new Stack();
 		
-		int limit = 10,
+		int limit = 100,
 			index = 1;
 			
 		while(index <= limit){

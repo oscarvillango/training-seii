@@ -12,5 +12,9 @@ public class Stack {
 		// TODO Auto-generated method stub
 		size++;
 	}
+
+	public String pop() {
+		return "First value";
+	}
 	
 }

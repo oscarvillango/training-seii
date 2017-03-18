@@ -9,10 +9,8 @@ public class DynamicStructuresTest {
 	public void stackTest(){
 		Stack stack = new Stack();
 		
-		String valueToTest = "First value Stack";
+		stack.push("First value");
 		
-		stack.push(valueToTest);
-		
-		Assert.assertTrue(stack.pop().equalsIgnoreCase(valueToTest));
+		Assert.assertTrue(1 == stack.size());
 	}
 }

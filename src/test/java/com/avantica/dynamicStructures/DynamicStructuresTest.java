@@ -7,9 +7,9 @@ public class DynamicStructuresTest {
 	
 	@Test
 	public void stackTest(){
-		Stack stack = new Stack();
+		Stack<Integer> stack = new Stack<Integer>();
 		
-		String[] values = {"Test", "for", "Stacks"};
+		int[] values = {1, 2, 5};
 		
 		
 		int index = 0;
@@ -21,7 +21,7 @@ public class DynamicStructuresTest {
 
 		while(0 < index){
 			index--;
-			Assert.assertTrue(stack.pop().equalsIgnoreCase(values[index]));	
+			Assert.assertTrue(stack.pop() == values[index]);	
 		}
 		
 	}

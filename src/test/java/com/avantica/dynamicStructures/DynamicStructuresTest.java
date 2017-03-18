@@ -9,6 +9,8 @@ public class DynamicStructuresTest {
 	public void stackTest(){
 		Stack stack = new Stack();
 		
-		Assert.assertTrue(stack);
+		stack.push("First value");
+		
+		Assert.assertTrue(stack.isEmpty() == false);
 	}
 }

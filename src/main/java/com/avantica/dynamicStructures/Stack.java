@@ -2,6 +2,7 @@ package com.avantica.dynamicStructures;
 
 public class Stack {
 
+	private String value;
 	private int size = 0;
 	
 	public Boolean isEmpty() {
@@ -9,12 +10,12 @@ public class Stack {
 	}
 
 	public void push(final String string) {
-		// TODO Auto-generated method stub
+		value = string;
 		size++;
 	}
 
 	public String pop() {
-		return "First value";
+		return value;
 	}
 	
 }

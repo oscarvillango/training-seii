@@ -17,5 +17,9 @@ public class Stack {
 	public String pop() {
 		return value;
 	}
+
+	public int size() {
+		return size;
+	}
 	
 }

@@ -9,8 +9,18 @@ public class DynamicStructuresTest {
 	public void stackTest(){
 		Stack stack = new Stack();
 		
-		stack.push("First value");
-		
-		Assert.assertTrue(1 == stack.size());
+		int limit = 10,
+			index = 1;
+			
+		while(index <= limit){
+			stack.push("Element #"+ index + " of the stack");
+			index++;
+		}
+
+		String stackFirstValue = stack.pop();
+		String stackSecondValue = stack.pop();
+
+		//Assert.assertTrue(stack.pop().equalsIgnoreCase(valueToTest));
+		Assert.assertFalse(stackFirstValue.equals(stackSecondValue));
 	}
 }

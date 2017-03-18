@@ -11,6 +11,6 @@ public class DynamicStructuresTest {
 		
 		stack.push("First value");
 		
-		Assert.assertTrue(stack.isEmpty() == false);
+		Assert.assertTrue(stack.pop().equalsIgnoreCase("First value"));
 	}
 }

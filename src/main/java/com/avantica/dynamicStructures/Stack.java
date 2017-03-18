@@ -1,13 +1,13 @@
 package com.avantica.dynamicStructures;
 
-public class Stack {
+public class Stack<Item> {
 
 	private Node firstElement = null;
 	private int size = 0;
 	
 	
 	private class Node{
-		private String value;
+		private Item value;
 		private Node next;
 	}
 	
@@ -15,7 +15,7 @@ public class Stack {
 		return size == 0;
 	}
 
-	public void push(final String string) {
+	public void push(final Item string) {
 		Node oldNode = firstElement;
 		Node newNode = new Node();
 		
@@ -26,7 +26,7 @@ public class Stack {
 		size++;
 	}
 
-	public String pop() {
+	public Item pop() {
 		Node currentNode = firstElement;
 		firstElement = firstElement.next;
 		

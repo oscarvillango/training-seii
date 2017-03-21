@@ -10,4 +10,11 @@ public class SetTest {
 		
 		Assert.assertFalse(implementationSet == null);
 	}
+	
+	@Test
+	public void addElementToSet(){
+		ImplementationSet implementationSet = new ImplementationSet();
+		
+		Assert.assertTrue(implementationSet.add("Insert value!"));
+	}
 }

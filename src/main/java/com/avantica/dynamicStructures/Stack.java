@@ -15,11 +15,11 @@ public class Stack<Item> {
 		return size == 0;
 	}
 
-	public void push(final Item string) {
+	public void push(final Item newItem) {
 		Node oldNode = firstElement;
 		Node newNode = new Node();
 		
-		newNode.value = string;
+		newNode.value = newItem;
 		firstElement = newNode;
 		firstElement.next = oldNode;
 		

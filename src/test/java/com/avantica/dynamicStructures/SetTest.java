@@ -24,8 +24,8 @@ public class SetTest {
 		
 		Assert.assertTrue(implementationSet.add("Insert value!"));
 		
-		ImplementationSet<Integer> implementationSet = new ImplementationSet<Integer>();
+		ImplementationSet<Integer> SecondImplementationSet = new ImplementationSet<Integer>();
 		
-		Assert.assertTrue(implementationSet.add(1));
+		Assert.assertTrue(SecondImplementationSet.add(1));
 	}
 }

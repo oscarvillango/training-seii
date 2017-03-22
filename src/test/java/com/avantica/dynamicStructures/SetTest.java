@@ -29,6 +29,11 @@ public class SetTest {
 
 		Assert.assertTrue(SecondImplementationSet.add(1));
 		Assert.assertTrue(SecondImplementationSet.add(2));
+		
+		ImplementationSet<Person> personImplementationSet = new ImplementationSet<Person>();
+
+		Assert.assertTrue(personImplementationSet.add(new Person("123456", "Oscar", 25)));
+		Assert.assertFalse(personImplementationSet.add(new Person("123456", "Oscar", 25)));
 	}
 	
 	@Test

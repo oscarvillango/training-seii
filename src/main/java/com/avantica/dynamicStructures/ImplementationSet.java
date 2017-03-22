@@ -6,4 +6,8 @@ public class ImplementationSet<E> {
 		return true;
 	}
 
+	public boolean contains(Object value) {
+		return true;
+	}
+
 }

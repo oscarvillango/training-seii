@@ -9,6 +9,11 @@ public class ImplementationSet<E> {
 	}
 	
 	public boolean add(E value) {
+		
+		if(this.contains(value)){
+			return false;
+		}
+		
 		Node oldNode = firstElement;
 		Node newNode = new Node();
 		

@@ -28,4 +28,12 @@ public class SetTest {
 
 		Assert.assertTrue(SecondImplementationSet.add(1));
 	}
+	
+	@Test
+	public void verifyInsertValueAndCheckIfValueExist(){
+		ImplementationSet<String> implementationSet = new ImplementationSet<String>();
+
+		Assert.assertTrue(implementationSet.add("Insert value!"));
+		Assert.assertTrue(implementationSet.contains("Insert value!"));
+	}
 }

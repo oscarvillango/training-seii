@@ -35,5 +35,8 @@ public class SetTest {
 
 		Assert.assertTrue(implementationSet.add("Insert value!"));
 		Assert.assertTrue(implementationSet.contains("Insert value!"));
+		
+		
+		Assert.assertFalse(implementationSet.contains("Test Value!"));
 	}
 }

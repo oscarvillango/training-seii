@@ -13,7 +13,7 @@ public class SetTest {
 	
 	@Test
 	public void addElementToSet(){
-		ImplementationSet implementationSet = new ImplementationSet();
+		ImplementationSet<String> implementationSet = new ImplementationSet<String>();
 
 		Assert.assertTrue(implementationSet.add("Insert value!"));
 	}
@@ -21,12 +21,14 @@ public class SetTest {
 	@Test
 	public void verifyAddMoreDataTypesToSet(){
 		ImplementationSet<String> implementationSet = new ImplementationSet<String>();
-		
+
 		Assert.assertTrue(implementationSet.add("Insert value!"));
+		Assert.assertFalse(implementationSet.add("Insert value!"));
 		
 		ImplementationSet<Integer> SecondImplementationSet = new ImplementationSet<Integer>();
 
 		Assert.assertTrue(SecondImplementationSet.add(1));
+		Assert.assertTrue(SecondImplementationSet.add(2));
 	}
 	
 	@Test

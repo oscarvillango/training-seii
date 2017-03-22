@@ -30,7 +30,7 @@ public class ImplementationSet<E> {
 		
 		while(cursorNode != null){
 			
-			if(cursorNode.value == value){
+			if(cursorNode.value.hashCode() == value.hashCode()){
 				return true;
 			}
 			

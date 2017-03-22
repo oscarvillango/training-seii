@@ -1,8 +1,8 @@
 package com.avantica.dynamicStructures;
 
-public class ImplementationSet {
+public class ImplementationSet<E> {
 
-	public boolean add(String string) {
+	public boolean add(E value) {
 		return true;
 	}
 

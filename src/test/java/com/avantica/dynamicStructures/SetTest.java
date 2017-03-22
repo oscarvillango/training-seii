@@ -14,7 +14,18 @@ public class SetTest {
 	@Test
 	public void addElementToSet(){
 		ImplementationSet implementationSet = new ImplementationSet();
+
+		Assert.assertTrue(implementationSet.add("Insert value!"));
+	}
+	
+	@Test
+	public void verifyAddMoreDataTypesToSet(){
+		ImplementationSet<String> implementationSet = new ImplementationSet<String>();
 		
 		Assert.assertTrue(implementationSet.add("Insert value!"));
+		
+		ImplementationSet<Integer> implementationSet = new ImplementationSet<Integer>();
+		
+		Assert.assertTrue(implementationSet.add(1));
 	}
 }

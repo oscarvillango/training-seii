@@ -50,9 +50,4 @@ public class SetTest {
 		Assert.assertFalse(implementationSet.contains("Test Value!"));
 	}
 	
-	@Test(expected = IllegalDataType.class)
-	public void verifyContainsDifferentDataType(){
-		ImplementationSet<String> implementationSet = new ImplementationSet<String>();
-		implementationSet.contains(0);
-	}
 }

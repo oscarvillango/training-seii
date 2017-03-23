@@ -40,4 +40,9 @@ public class ImplementationSet<E> {
 		return false;
 	}
 
+	public boolean remove(Object value) {
+		
+		return true;
+	}
+
 }

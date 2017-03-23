@@ -55,10 +55,15 @@ public class SetTest {
 		ImplementationSet<String> implementationSet = new ImplementationSet<String>();
 
 		Assert.assertTrue(implementationSet.add("Insert value!"));
+		Assert.assertTrue(implementationSet.add("Insert value two!"));
+		Assert.assertTrue(implementationSet.add("Insert value three!"));
 
-		Assert.assertTrue(implementationSet.remove("Insert value!"));
-		
-		Assert.assertFalse(implementationSet.contains("Insert value!"));
+		Assert.assertTrue(implementationSet.remove("Insert value two!"));
+		Assert.assertTrue(implementationSet.remove("Insert value three!"));
+
+		Assert.assertFalse(implementationSet.contains("Insert value two!"));
+		Assert.assertFalse(implementationSet.contains("Insert value three!"));
+		Assert.assertTrue(implementationSet.contains("Insert value!"));
 		
 	}
 }

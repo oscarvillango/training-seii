@@ -42,7 +42,25 @@ public class ImplementationSet<E> {
 
 	public boolean remove(Object value) {
 		
-		return true;
+		Node pivot = firstElement;
+		Node pivotBefore = null;
+		
+		while(pivot != null){
+			if(pivot.value.hashCode() == value.hashCode()){
+				
+				if(firstElement == pivot){
+					firstElement = firstElement.next;
+				}else{
+					pivotBefore.next = pivot.next;
+				}
+				
+				return true;
+			}
+			pivotBefore = pivot;
+			pivot = pivot.next;
+		}
+		
+		return false;
 	}
 
 }

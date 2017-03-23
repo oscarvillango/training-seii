@@ -53,7 +53,7 @@ public class SetTest {
 	@Test
 	public void verifyDeleteElement(){
 		ImplementationSet<String> implementationSet = new ImplementationSet<String>();
-		
+
 		Assert.assertTrue(implementationSet.add("Insert value!"));
 
 		Assert.assertTrue(implementationSet.remove("Insert value!"));

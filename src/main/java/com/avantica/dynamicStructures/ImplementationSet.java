@@ -25,7 +25,7 @@ public class ImplementationSet<E> {
 	}
 
 	public boolean contains(Object value) {
-		
+				
 		Node cursorNode = firstElement;
 		
 		while(cursorNode != null){

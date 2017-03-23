@@ -50,10 +50,4 @@ public class SetTest {
 		Assert.assertFalse(implementationSet.contains("Test Value!"));
 	}
 	
-	@Test(expected = CollectionEmpty.class)
-	public void verifyContainsSetVoid(){
-		ImplementationSet<String> implementationSet = new ImplementationSet<String>();
-		
-		implementationSet.contains("Test");
-	}
 }

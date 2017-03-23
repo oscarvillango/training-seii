@@ -39,7 +39,7 @@ public class SetTest {
 	@Test
 	public void verifyInsertValueAndCheckIfValueExist(){
 		ImplementationSet<String> implementationSet = new ImplementationSet<String>();
-
+		
 		Assert.assertTrue(implementationSet.add("Insert value!"));
 		Assert.assertTrue(implementationSet.add("Insert value two!"));
 		Assert.assertTrue(implementationSet.add("Insert value three!"));
@@ -48,5 +48,12 @@ public class SetTest {
 		
 		
 		Assert.assertFalse(implementationSet.contains("Test Value!"));
+	}
+	
+	@Test(expected = CollectionEmpty.class)
+	public void verifyContainsSetVoid(){
+		ImplementationSet<String> implementationSet = new ImplementationSet<String>();
+		
+		implementationSet.contains("Test");
 	}
 }
